@@ -1,0 +1,151 @@
+@import './variable';
+
+
+.form{
+
+    &__container{
+      &--md{
+        max-width: 520px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        flex-wrap: wrap;
+        @media screen and (max-width:1350px) {
+            max-width: 480px;
+        }
+        
+        @media screen and (max-width:992px) {
+            max-width: 100%;
+        }
+        
+      }
+    }
+    
+    &__controls{
+        display: flex;
+        flex-wrap: wrap;
+    }
+&__input{
+    &--sm{
+        max-width: 150px;
+        width: 100%;
+
+        @media screen and (max-width:992px) {
+            max-width: 120px;
+        }
+        
+    }
+    &--xs{
+        max-width: 100px;
+        width: 100%;
+        @media screen and (max-width:992px) {
+            max-width: 64px;
+        }
+    }
+    &--md{
+        max-width: 200px;
+        width: 100%;
+        @media screen and (max-width:992px) {
+            max-width: 100px;
+        }
+    }
+}
+
+
+&__control{
+    margin-bottom: 40px;
+}
+
+&__label{
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    color: $color-primary;
+    @media screen and (max-width:992px) {
+        font-size: 18px;
+    }
+}
+&__placeholder{
+    color: $color-grey;
+    font-size: 16px;
+    margin-bottom: 10px;
+    @media screen and (max-width:992px) {
+        font-size: 12px;
+    }
+}
+&__input{
+    border: 0.3px solid $color-grey-light;
+    padding: 12px 16px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: $color-grey-300;
+    outline: none;
+    &:focus{
+        border:$border-primary
+    }
+    @media screen and (max-width:992px) {
+        font-size: 14px;
+    }
+}
+    
+}
+
+
+.w-100{
+    width: 100%;
+}
+
+
+.btn{
+    &--submit{
+        border-radius: 5px;
+        box-shadow: $shadow-large;
+        padding: 20px;
+        text-align: center;
+        color: $color-white;
+        font-weight: 700;
+        font-size: 20px;
+        text-transform: uppercase;
+        background-color: $color-orange;
+        border: 1px solid $color-orange;
+        &:focus,&:active{
+            background-color: darken($color: $color-orange, $amount: 0.10);
+            border: 1px solid $color-orange;
+            outline: none;
+        }
+        @media screen and (max-width:992px) {
+           font-size: 16px;
+           padding: 16px;
+        }
+    }
+}
+
+
+.form__input--upi{
+    padding: 16px 32px;
+    border-radius: 20px;
+    box-shadow: $shadow-small;
+    outline: none;
+    width: 140px;
+    background-color: $color-white;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    &:focus,&:active{
+        border: none;
+        text-decoration: none;
+        outline: none;
+    }
+
+    @media screen and (max-width:578px) {
+        max-width: 100px;
+        width: 100%;
+    }
+}
+
+.upi-client__logo{
+    height: 42px;
+    @media screen and (max-width:578px) {
+        height: 36px;
+    }
+}

@@ -1,0 +1,44 @@
+@import '../../assets/scss/variable';
+
+
+.form__inputs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+   
+    &.bank{
+        margin-bottom: 40px;
+        justify-content: start;
+        @media screen and (max-width:578px) {
+            margin-bottom: 20px;
+        }
+    }
+
+}
+
+
+
+.form__input--bank{
+    padding: 16px;
+    border-radius: 20px;
+    box-shadow: $shadow-small;
+    outline: none;
+    background-color: $color-white;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    &:focus,&:active{
+        border: none;
+        text-decoration: none;
+        outline: none;
+    }
+}
+
+.bank-client__logo{
+   width: 80px;
+
+   @media screen and (max-width:578px) {
+    width: 64px;
+   }
+}

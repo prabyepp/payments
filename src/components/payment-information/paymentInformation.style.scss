@@ -1,0 +1,99 @@
+@import '../../assets/scss/variable';
+
+.main-content{
+  padding-left: 32px;
+  flex: 1;
+  @media screen and ( max-width:992px) {
+   padding-left: 0px;
+}
+}
+.order__details-container{
+    margin:-40px 0px   ;
+    @media screen and (max-width:1100px) {
+        margin: -20px 0px 0px 0px;
+    }
+}
+.payment-information{
+    background-color: $background-white;
+    padding: 64px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: $shadow-large;
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    min-height: 800px;
+    @media screen and ( max-width:1450px) {
+        padding: 40px;
+        
+    }
+    @media screen and ( max-width:1100px) {
+        padding: 25px;
+        min-height: auto;
+        border-radius: 20px;
+        width: 100%;
+     }
+    &__header{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 48px;
+        @media screen and ( max-width:992px) {
+           margin-bottom: 20px;
+           max-width: 100%;
+        }
+    }
+
+    &__heading{
+        color: $color-primary;
+        font-size: 48px;
+        font-weight: 700;
+        text-transform: capitalize;
+        @media screen and ( max-width:1450px) {
+           font-size: 32px;
+         }
+        
+    }
+
+    &__heading-timer{
+        margin-left: auto;
+        @media screen and ( max-width:992px) {
+           display: none;
+         }
+        
+    }
+
+    &__container{
+        padding: 40px 0px;
+        position: relative;
+        margin-bottom: 32px;
+        display: flex;
+        @media screen and ( max-width:1100px) {
+           flex-direction: column;
+           padding: 20px 0px;
+           margin-bottom: 0;
+        }
+    }
+    &__footer{
+        max-width: 520px;
+        margin: 24px 0px;
+        font-size: 12px;
+        color: $color-grey;
+        text-align: center;
+        @media screen and (max-width:992px) {
+           font-size: 10px;
+        }
+       
+    }
+}
+
+.payment__modes{
+    display: none;
+    @media screen and (max-width:992px) {
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        padding-right: 5px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,25 @@
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ml-auto{
+    margin-left: auto;
+}
+.mr-auto{
+    margin-right: auto;
+}
+.mt-auto{
+    margin-top: auto;
+}
+.mb-auto{
+    margin-bottom: auto;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.bg-white{
+    background-color: $color-white;
+}

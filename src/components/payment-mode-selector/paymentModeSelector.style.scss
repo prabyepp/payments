@@ -1,0 +1,84 @@
+@import '../../assets/scss/variable';
+
+
+.payment{
+
+    &__selected{
+display: flex;
+align-items: center;
+margin-right: 10px;
+.payment__mode-icon{
+    margin-right: 15px;
+}
+
+    }
+    &__selector{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-right: 15px;
+        background-color: $color-primary;
+        box-shadow: $shadow-medium;
+        padding: 16px 16px;
+        color: $color-white;
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 300px;
+       @media screen and (max-width:480px) {
+       width: 250px;
+       }
+       @media screen and (max-width:420px) {
+        max-width: 200px;
+        width: 100%;
+        flex: 1;
+       }
+       
+    }
+    &__modes-container{
+        position: relative;
+        flex:1;
+    }
+
+    &__modes-options{
+        background-color: $color-primary;
+        border-radius: 20px;
+        padding: 10px 20px;
+        width: 300px;
+        z-index: 99;
+        box-shadow: $shadow-medium;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        transform: translateY(-30px);
+    }
+    &__mode{
+        &--first{
+            display: flex;
+            justify-content: space-between;
+            .dropdown__icon{
+                font-size: 24px;
+                color: $color-white;
+            }
+        }
+            margin-bottom: 10px;
+        &,&:focus,&:active,&:visited{
+        display: flex;
+        align-items: center;
+        color: $color-white;
+        font-size: 18px;
+        text-transform: capitalize;
+        font-weight: 500;
+        text-decoration: none;
+        }
+
+        &-icon{
+            fill:$color-white;
+            flex-shrink: 0;
+            height: 28px;
+            width: 20px;
+            margin-right: 20px;
+        }
+    }
+    
+}

@@ -1,0 +1,65 @@
+@import '../../assets/scss/variable';
+
+.order{
+&__details{
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: $shadow-large;
+    background-color: $color-primary-dark;
+    color: $color-white;
+    max-width: 352px;
+    height: 100%;
+    @media screen and ( max-width:1300px) {
+       max-width: 300px;
+    }
+    @media screen and ( max-width:992px) {
+        position: relative;
+        max-width: 100%;
+        z-index: -1;
+        padding-top: 35px;
+    }
+
+}
+&__content{
+    margin-bottom: 20px;
+    border-bottom: 5px dashed $color-white;
+}
+&-detail{
+    &:last-child{
+        margin-bottom: 32px;
+    }
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    align-items: center;
+    &__heading{
+        font-size: 18px;
+    }
+    &__item{
+        flex: 1;
+    }
+}
+
+&__price-detail{
+    padding: 0px 32px;
+    margin-bottom: 48px;
+}
+&__price-text{
+font-size: 18px;
+font-weight: 500;
+margin-bottom: 4px;
+}
+&__price{
+    font-size: 34px;
+    font-weight: 700;
+}
+
+&__logo{
+    width: 100%;
+    display: inline-block;
+}
+&__logo-box{
+    margin-bottom: 20px;
+}
+}

@@ -1,0 +1,31 @@
+@import '../../assets/scss/variable';
+
+
+.form{
+    &__input{
+        &--card{
+            position: relative;
+            input{
+                width: 100%;
+            }
+            .icon{
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                transform: translateY(-50%);
+                display: inline-block;
+                img{
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+.month-separator{
+    font-size: 18px;
+    color: $color-grey;
+    margin: 0 10px;
+}
+

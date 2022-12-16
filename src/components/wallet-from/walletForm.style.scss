@@ -1,0 +1,18 @@
+@import '../../assets/scss/variable';
+
+
+.form__input--phone{
+    position: relative;
+    input{
+        font-size: 14px;
+    }
+}
+.phone-code{
+    position: absolute;
+    left: 20px;
+    color: $color-grey;
+    font-size: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
